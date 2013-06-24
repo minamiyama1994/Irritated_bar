@@ -1,0 +1,2 @@
+#! /bin/sh
+notepad++ -nosession -multiInst ./{*.[ch]pp,.start,Makefile} &

@@ -24,6 +24,8 @@ clean :
 	-rm --verbose *.dll
 	-rm --verbose *.gcno
 	-rm --verbose *.gcda
+commit :
+	cp *.{c,h}pp Makefile .start /C/Users/Owner/Documents/GitHub/Irritated_bar
 libirritated_bar_interface.dll : irritated_bar_interface.o
 	$(CPP) -shared -o $@ $^ $(BIN_OPT) $(libs)
 irritated_bar.exe : irritated_bar.o creater_manager.o
